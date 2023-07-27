@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'citizenreport.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'reportdb',
         'USER': 'Eniola',
         'PASSWORD':'London2020*',
