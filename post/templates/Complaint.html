@@ -15,9 +15,11 @@
    <div class="col-md-6 offset-md-3 mt-5">
           <img src="{% static 'post/assets/img/cg_2.0_logo.png' %}"
         <br>
-        <form accept-charset="UTF-8" action="" method="POST" enctype="multipart/form-data" target="_blank">
+        <div class="form-group">
+          <form accept-charset="UTF-8" action="" method="POST" enctype="multipart/form-data" target="_blank">
           {% csrf_token %}
-          <div class="form-group">
+          {{form.as_p}}
+          <!-- <div class="form-group">
             <label for="exampleInputName">Address</label>
             <input type="text" name="fullname" class="form-control" id="exampleInputName" placeholder="" required="required">
           </div>
@@ -30,10 +32,12 @@
           <div class="form-group mt-3">
             <label class="mr-2"></label>
             <input type="file" name="file">
-          </div>
+          </div> -->
           <hr>
           <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+          </form>
+        </div>
+
     </div>
 
 
